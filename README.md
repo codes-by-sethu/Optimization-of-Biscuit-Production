@@ -1,19 +1,14 @@
-Artificial Intelligence Algorithm Project: Optimization of Biscuit Production
+# Artificial Intelligence Algorithm Project: Optimization of Biscuit Production
 
 This project applies AI algorithms to optimize biscuit production from a fixed-size dough roll, maximizing profit while respecting manufacturing constraints. Two approaches are implemented: Constraint Satisfaction with Dynamic Programming (CSP + DP) and a Genetic Algorithm (GA).
 
 🎯 Problem Statement
 
 A biscuit factory needs to arrange various biscuit types on a 500-position dough roll to maximize total production and profit, while ensuring:
-
 No overlapping biscuits
-
 Defect thresholds are not violated
-
 Biscuits are placed at integer positions
-
 Total biscuit length does not exceed the dough roll
-
 Penalty of -1 per unused dough position
 
 ⚙️ Algorithms Implemented
@@ -30,15 +25,10 @@ Transition: skip a position (penalty) or place the highest-value valid biscuit.
 2. Genetic Algorithm (GA)
 
 Chromosome: 500-position array with biscuit IDs or -1 for unused positions.
-
 Fitness: sum of biscuit values minus penalties for unused positions.
-
 Evolutionary Operators:
-
 Selection: Tournament
-
 Crossover: Single-point
-
 Mutation: Randomly replace biscuit placement
 
 🍪 Biscuit Types
@@ -61,9 +51,6 @@ The Genetic Algorithm is recommended for solving the biscuit production problem 
 ⚙️ Technologies Used
 
 Python
-
 AI/Optimization Libraries (NumPy, random, etc.)
-
 Dynamic Programming
-
 Genetic Algorithm techniques
